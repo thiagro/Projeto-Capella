@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @uniforme.item %>
+</p>
+
+<p>
+  <strong>Tamanho:</strong>
+  <%= @uniforme.tamanho %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @uniforme.quantidade %>
+</p>
+
+<p>
+  <strong>Validade:</strong>
+  <%= @uniforme.validade %>
+</p>
+
+<%= link_to 'Edit', edit_uniforme_path(@uniforme) %> |
+<%= link_to 'Back', uniformes_path %>

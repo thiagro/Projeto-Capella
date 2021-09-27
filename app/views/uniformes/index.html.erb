@@ -1,0 +1,50 @@
+
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<h1>Uniformes</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Item</th>
+      <th scope="col">Tamanho</th>
+      <th scope="col">Quantidade</th>
+      <th scope="col">Validade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @uniformes.each do |uniforme| %>
+      <tr>
+        
+        <td scope="row"><%= uniforme.item %></td>
+        <td scope="row"><%= uniforme.tamanho %></td>
+        <td scope="row"><%= uniforme.quantidade %></td>
+        <td scope="row"><%= uniforme.validade %></td>
+        <td><%= link_to 'Show', uniforme %></td>
+        <td><%= link_to 'Edit', edit_uniforme_path(uniforme) %></td>
+        <td><%= link_to 'Destroy', uniforme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<div class="row">
+     <div class="col-12 col-md-8">
+       <div class="btn btn-outline-dark">
+          <%= link_to 'New Uniforme', new_uniforme_path , :class => "btn" %> 
+       </div>
+      </div>
+      
+      <div class="col-6 col-md-4"> 
+        <div class="btn btn-outline-dark">
+        <%= link_to 'Voltar a Home Page', root_path , :class => "btn" %> 
+        </div>
+      </div>
+</div> 
+
+</div>

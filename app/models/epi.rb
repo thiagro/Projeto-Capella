@@ -1,0 +1,2 @@
+class Epi < ApplicationRecord
+end

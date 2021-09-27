@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item: MyString
+  tamanho: MyString
+  quantidade: 1
+  validade: MyString
+
+two:
+  item: MyString
+  tamanho: MyString
+  quantidade: 1
+  validade: MyString

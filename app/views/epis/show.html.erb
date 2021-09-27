@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @epi.item %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @epi.quantidade %>
+</p>
+
+<p>
+  <strong>Validade:</strong>
+  <%= @epi.validade %>
+</p>
+
+<p>
+  <strong>Obs:</strong>
+  <%= @epi.obs %>
+</p>
+
+<%= link_to 'Edit', edit_epi_path(@epi) %> |
+<%= link_to 'Back', epis_path %>

@@ -1,0 +1,67 @@
+<div class="jumbotron">
+        <div class="container">
+          <h5 class="display-3">SGE - Stock On a Place </h5>
+          <p>Para começar, selecione uma das opções abaixo:</p>
+          </div>
+      </div>
+<div class="container">
+  
+  <div class="row">
+    
+    <div class="col">
+        
+        
+    </div>
+    
+    
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Controle de Equipamentos</h2>
+            <p> Por aqui você consegue cadastrar, editar e remover equipamentos.</p>
+            
+          </div>
+          <div class="col-md-4">
+            <h2>Controle de Materiais</h2>
+            <p>Por aqui você consegue cadastrar, editar e remover Materiais.</p> 
+            
+          </div>
+          <div class="col-md-4">
+            <h2>Saída de EPI/Materiais</h2>
+            <p>Por aqui você consegue destinar os equipamentos ou materiais, de maneira a localiza-los quando precisar.</p>
+            
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <hr>
+              <p><div class="btn btn-primary btn-sm">
+              <%= link_to 'Estoque de EPI', epis_path(@epi) , :class => "btn" %> 
+            </div></p>
+            </div>  
+            
+            <div class="col-md-4">
+              <hr>
+             <p><div class="btn btn-secondary btn-sm">
+             <%= link_to 'Estoque de Materiais',uniformes_path("uniformes#new") ,  :class => "btn" %>
+            </div></p>
+            </div>  
+            
+            <div class="col-md-4">
+              <hr>
+              <p><div class="btn btn-warning btn-sm">
+              <%= link_to 'Retirar Estoque', uniformes_path(@uniforme) , :class => "btn" %> 
+            </div></p>
+            </div>  
+            
+            
+          </div>
+        </div>
+
+        
+   
+</div>
+
+  
+
+
